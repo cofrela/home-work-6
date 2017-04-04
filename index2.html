@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <script>
+        function copyData() {
+            var itm = document.getElementById("myList1");
+            var cln = itm.cloneNode(true);
+            document.getElementById("basket").appendChild(cln);
+        }
+        
+        </script>
+
+</head>
+
+<body>
+  <div id="myList1"><b>Товар1</b><p>100&#8381;</p></div><button onclick="copyData()">Купить</button>
+  <div id="myList2"><b>Товар2</b><p>200&#8381;</p></div><button onclick="copyData()">Купить</button>
+  <div id="myList3"><b>Товар3</b><p>300&#8381;</p></div><button onclick="copyData()">Купить</button>
+
+  <div id="basket">Корзина:</div>
+  
+</body>
+</html>
